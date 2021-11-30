@@ -1,8 +1,7 @@
-  
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,28 +19,53 @@ body {
   min-height: 100vh;
 }
 
+.timer {
+  display: flex;
+  justify-content: center;
+  background-color: #35416d;
+  align-items: center;
+  align-self: flex-start;
+  width: 100%;
+  min-height: 50px;
+  font-size: larger;
+  border-radius: 10px;
+}
+
+.question-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  /* background-color: #ff3333; */
+}
+
 .app {
   background-color: #252d4a;
   width: 450px;
-  min-height: 200px;
+  min-height: 450px;
   height: min-content;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .score-section {
   display: flex;
   font-size: 24px;
   align-items: center;
+  justify-content: center;
 }
-
 
 .question-section {
   width: 100%;
   position: relative;
+  /* background-color: #2f922f */
 }
 
 .question-count {
@@ -66,10 +90,9 @@ body {
   text-align: center;
 }
 
-
-
 .answer-section {
   width: 100%;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
